@@ -1,0 +1,11 @@
+body {
+    background: linear-gradient(to bottom left, rgb(255, 17, 17), rgb(59, 7, 7));
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color: white;
+    /* overflow-x: hidden; */
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
