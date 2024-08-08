@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom left, rgb(230, 87, 87), rgb(119, 29, 50));
+    background: radial-gradient(rgb(48, 48, 48), rgb(0, 0, 0));
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     color: white;
     /* overflow-x: hidden; */
