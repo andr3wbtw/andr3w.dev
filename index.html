@@ -1,11 +1,37 @@
-<html lang="en">
+<!DOCTYPE html> <!-- Declare html doctype -->
+
+<html lang="en-CA"> <!-- Root of webpage, declare language to be English -->
     <head>
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="weblogo.ico" />
-
+        <link rel="icon" href="weblogo.ico">
+        <title>andr3w</title> <!-- Title in the top of the tab for the webpage -->
     </head>
 
-    <body>
-        <br><h1 style="text-align:center;font-size:10vw;color:RGB(255,255,255)">andr3w</h1>
+    <body> <!-- The visible entirely of the webpage -->
+
+        <div id="london">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+
+        <script>
+            document.getElementById("london").innerHTML = "Hello JavaScript!";
+        </script>
+
+        <div id="oslo">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+
+        <div id="rome">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+
+        <br><button onclick="document.location='contact.html'">Contact me!</button>
     </body>
+
 </html>
