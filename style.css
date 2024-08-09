@@ -3,52 +3,53 @@ html {
 }
 
 body {
-    background: radial-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    background: linear-gradient(to top right, #4b4e49, #F8F7F2);
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     color: white;
-    /* overflow-x: hidden; */
-    background-attachment: fixed;
-}
-
-.navbar {
-    background:rgb(0,0,0);
-}
-.navbar-brand {
-    color: #fff;
-    cursor: pointer;
-}
-.nav-link {
-    margin-right: 1em !important;
-}
-.nav-link:hover {
-    color: rgb(255,255,255);
-}
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar-dark {
-    background-color: rgb(0,0,0);
-}
-
-.navbar-dark a {
-    color: rgb(255,255,255);
 }
 
 .description {
-    left: 50%;
-    position: absolute;
-    top: 45%;
-    transform: translate(-50%, -55%);
     text-align: center;
 }
 
 .description h1 {
     color: #191919;
-    font-size: 5dvmax;
+    font-size: 6rem;
 }
 
 .description p {
     color: #191919;
-    font-size: 2dvmax;
+    font-size: 2.5rem;
+}
+
+.description img {
+    width: 10rem
+}
+
+.navbar {
+    background-color: rgb(0,0,0);
+}
+
+.navbar a {
+    color: rgb(255,255,255);
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: #4b4e49 !important;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.bottom a {
+    font-size: 1rem;
 }
