@@ -1,0 +1,18 @@
+{
+  "name": "andr3w.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andr3wbtw/andr3w.dev.git"
+  },
+  "private": true,
+  "dependencies": {
+    "daisyui": "^4.12.10",
+    "tailwindcss": "^3.4.11"
+  }
+}
