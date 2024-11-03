@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Declare html doctype -->
+
+<html lang="en-CA"> <!-- Root of webpage, declare language to be English -->
+    <head>
+        <link href="/tailwind.css" rel="stylesheet"> <!-- link CSS style sheet -->
+        <link rel="icon" href="/weblogo.ico"> <!-- link the local favicon (website logo) -->
+        <title>andr3w</title> <!-- set the title in the top of the webpage -->
+    </head>
+
+    <body class="bg-gradient-to-b from-gray-300 to-gray-500 min-h-screen">
+        <div class="navbar bg-neutral text-neutral-content">
+            <!-- Left-aligned brand name -->
+            <div class="flex-1">
+                <a href="/" class="btn btn-ghost text-xl text-white">andr3w.dev</a>
+            </div>
+
+            <!-- Centered navbar buttons -->
+            <div class="flex-none flex-1 flex justify-center space-x-4">
+                <a href="/video/index.html" class="btn btn-ghost text-xl">Video</a>
+                <a href="/contact/index.html" class="btn btn-ghost text-xl">Contact</a>
+            </div>
+
+            <!-- Empty div to balance out the layout -->
+            <div class="flex-1"></div>
+        </div>
+
+
+        <div class="bg-gradient-to-b from-gray-300 to-gray-500 min-h-screen flex items-center justify-center">
+            <form id="contactForm" class="space-y-4">
+                <br>
+                <h1 class="mb-4 text-4xl font-extrabold">
+                    <b>Work in Progress</b>
+                </h1>
+                <br><br>
+                <!-- Name Field -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full">
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required
+                           class="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full">
+                </div>
+
+                <!-- Subject Field -->
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           class="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full">
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                              class="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                    <button type="submit"
+                            class="bg-indigo-600 text-black font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+        <script src="./send_email.js"></script>
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Here, call your function in send_email.js to process the form data
+                sendEmailFunction(); // Assuming `sendEmailFunction` is defined in send_email.js
+            });
+        </script>
+    </body>
+</html>

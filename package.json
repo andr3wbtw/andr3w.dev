@@ -14,6 +14,8 @@
   },
   "private": true,
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "emailjs-com": "^3.2.0",
     "tailwindcss": "^3.4.11"
   },
   "devDependencies": {
